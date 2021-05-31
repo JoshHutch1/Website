@@ -309,13 +309,13 @@ hr {
 }
 
 /*────────────────── 
-     hamburger
+     line
 ──────────────────*/
-.hamburger {
+.line {
 	display: none;
 }
 
-.hamburger div{
+.line div{
 	width: 30px;
 	height: 3px;
 	background: #dbdbdb;
@@ -393,7 +393,7 @@ hr {
 		transition: transform 0.5s ease-in;
 		z-index: -1;
 	}
-	.hamburger{
+	.line{
 		position:absolute;
 		top: 17px;
 		right: 25%;
