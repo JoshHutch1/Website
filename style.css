@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('http://fonts.cdnfonts.com/css/great-wishes');
 
 :root{
 	--main-background: #0b0c0f;
@@ -20,6 +21,9 @@ main{
 	height: 100%;
 	background: var(--main-background);
 }
+/*────────────────── 
+       loader
+──────────────────*/
 .loader{
 	position: fixed;
 	z-index: 99;
@@ -27,7 +31,7 @@ main{
 	left:0;
 	width: 100%;
 	height: 100%;
-	background-color: #fff;
+	background-color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -36,7 +40,7 @@ main{
 	width: 100px;
 }
 .loader.hidden{
-	animation: fadeOut 5s;
+	animation: fadeOut 3s;
 	animation-fill-mode: forwards;
 }
 @keyframes fadeOut {
@@ -78,7 +82,9 @@ header:hover{
 	height: 50px;
 	cursor: pointer;
 }
-
+.logo:hover{
+	transform: scale(1.5);
+}
 .nav-bar{
 	list-style:none;
 	position: relative;
@@ -141,21 +147,65 @@ a.nav-link{
 .intro  p{
     margin: 5px;
 	font-size:1.2rem;
-	font-family: var(--main-font-family);
 	text-align:center;
 }
 
  h3{
 	padding-bottom: 15px;
+	font-family: great wishes;
     letter-spacing: normal;
-    font-family: var(--main-font-family);
 	font-style: normal;
-	font-size: 60px;
+	font-size: 51px;
 	color: var(--main-fonts-color);
-	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
-
-
+h1 {
+	font-family: Montserrat;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	max-width: 600px;
+	position: relative;
+  }
+  h1:before {
+	content: "";
+	display: block;
+	width: 49px;
+	height: 3px;
+	background: white;
+	left: 45px;
+	top: 50%;
+	position: absolute;
+  }
+  h1:after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 3px;
+	background: white;
+	right: -05px;
+	top: 50%;
+	position: absolute;
+  }
+.goto{
+	text-decoration: none;
+	font-size: 17px;
+	font-family: montserrat;
+	font-weight: bold;
+	color: white;
+	width: 122px;
+	height: 20px;
+}
+.goto{
+	text-decoration: none;
+	font-size: 17px;
+	color: white;
+	width: 122px;
+	height: 20px;
+	padding-right: 115px;
+}
+.goto:hover{
+	color: aqua;
+}
 /*──────────────────
     social media
 ──────────────────*/
@@ -304,18 +354,6 @@ footer {
 	color: var(--main-decor-color);
 }
 
-/*──── hr ─────*/
-
-hr {
-    background: var(--main-decor-color);
-	margin: 2px;
-	height: 3px;
-	width: 150px;
-    border-radius:5px;
-	border: hidden;
-	margin-inline-start: auto;
-    margin-inline-end: auto;
-}
 
 /*────────────────── 
      Scrollbar
